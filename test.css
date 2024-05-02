@@ -1,0 +1,323 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.initial-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.initial-section .text {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.text-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.text-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    width: 50%;
+    padding: 20px;
+}
+
+.text h1,
+.text h2 {
+    margin-top: 0;
+}
+
+.text p {
+    margin-bottom: 0;
+}
+
+.section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.section:nth-child(even) .text {
+    order: 2;
+}
+
+.text {
+    width: 50%;
+    padding: 20px;
+    order: 1;
+}
+
+.text h1,
+.text h2 {
+    margin-top: 0;
+}
+
+.text p {
+    margin-bottom: 0;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+    object-fit: cover;
+    order: 2;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Button section styles */
+.button-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.button-content {
+    text-align: center;
+}
+
+.button-content h2 {
+    margin-bottom: 20px;
+}
+
+.button-content button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-content button:hover {
+    background-color: #555;
+}
+
+/* Support button page \ styles */
+.email-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.email-button:hover {
+    background-color: #555;
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text {
+    flex: 1;
+}
+
+.footer-text p {
+    margin: 0;
+}
+
+.footer-links {
+    flex: 1;
+    text-align: right;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.footer-links a:hover {
+    color: #ccc;
+}
+
+
+/* navbar style*/
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container-nav {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-links a:hover {
+    color: #ccc;
+}
+
+section {
+    padding: 20px;
+    /* Adjust the padding as needed */
+}
+
+/* Reset default browser styles */
+
+.social-card {
+    display: inline-block;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 200px;
+    position: relative;
+    /* Add position relative for hover effect */
+}
+
+.social-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* Center image horizontally */
+    margin: 0 auto;
+    /* Center image vertically */
+    transition: transform 0.3s ease;
+    /* Add transition for hover effect */
+}
+
+.social-card h2 {
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.social-card:hover img {
+    transform: scale(1.1);
+    /* Add scale effect on hover */
+}
+
+.social-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main{
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    padding: 40px;
+    margin: 0;
+}
+ul li {
+    margin-bottom: 10px;
+}
+ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+ul li a:hover {
+    color: #555;
+}
+
+#toc{
+    padding: 20px;
+}
+
+#kobeChen{
+    width: 500px;
+    height: 300px;
+}
+
+.bot-navigation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.bot-navigation button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color:#333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bot-navigation button:hover {
+    background-color:#555;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Basics of Java</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar">
+
+                <a href="index.html" class="curr-tab">Home</a>
+                <div class="vert-line"></div>
+                <a href="about.html">About</a>
+                <div class="vert-line"></div>
+                <a href="support.html">Support</a>
+                <div class="vert-line"></div>
+                <a href="learn.html">Learn</a>
+                <div class="vert-line"></div>
+                <a href="interaction.html">Test</a>
+
+            </nav>
+        </header>
+
+        <main>
+            <div class="header">
+                <img src="images/1ca7b34a8d5308a03ae186dfe72caabce0327fe2-1456x816.webp"
+                    class="header-image">
+                <h1 class="header-title">Basics of Java</h1>
+            </div>
+            <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var header = document.querySelector(".header");
+                var headerTitle = document.querySelector(".header-title");
+                
+            
+                window.addEventListener("scroll", function () {
+                    var scrollPosition = window.scrollY;
+            
+                    if (scrollPosition > header.clientHeight) {
+                        headerTitle.style.opacity = "0";
+                    } else {
+                        headerTitle.style.opacity = "1";
+                    }
+                });
+            });
+            </script>
+
+            <h3>Welcome</h3>
+            <p>Hello,</p>
+            <p>Welcome to my website. This website is a tool for those who are
+                new to programming or just want to learn a little more about
+                Java. Here you will be linked to videos and resources which
+                teach you the basics and fundamentals of Java and compare it to
+                python so you can see the similarities and differences between
+                two of the most popular programing languages at the end you will
+                be able to play a game which cover the things you should of
+                learned to test your skills</p>
+
+                <p>To get started on your jounry </p>
+                <div>
+                    <form class="inline-style" action="learn.html" method="get">
+                        <button>Get Started!</button>
+                    </form>
+                </div>
+
+        </main>
+
+        <footer>
+            <p>&copy; All rights researved</p>
+        </footer>
+    </body>
+</html>
