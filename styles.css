@@ -358,3 +358,30 @@ ul li a:hover {
 #obj {
     text-align: center;
 }
+
+.model {
+    margin-bottom: 20px;
+}
+
+.model img {
+    max-width: 100%;
+}
+
+#objDetectionSection{
+    justify-content: center;
+    text-align: center;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+#poseDetectionSection{
+    justify-content: center;
+    text-align: center;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+#objectSegmentationSection{
+    justify-content: center;
+    text-align: center;
+    padding-left: 400px;
+    padding-right: 400px;
+}

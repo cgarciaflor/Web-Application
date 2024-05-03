@@ -1,0 +1,72 @@
+{
+    "objDetection": [
+        {
+            "model_name": "YOLO (You Only Look Once)",
+            "image": "model_images/YOLO.jpg",
+            "info": "Its standout feature is its speed. YOLO can process images in real-time, making it one of the fastest object detection models available. However, this design also means that YOLO might struggle with small objects or objects that are close together, as they might fall into the same grid cell.",
+            "more": "You can learn more at ",
+            "link": "https://www.superannotate.com/blog/yolo-object-detection"
+        },
+        {
+            "model_name": "Detectron2",
+            "image": "model_images/detectron2.png",
+            "info": "Detectron2 is not just an incremental improvement over its predecessors, but a complete overhaul. It introduces new capabilities such as panoptic segmentation, Densepose, Cascade R-CNN, PointRend, DeepLab, ViTDet, MViTv2, and more. The library is both a research tool and a production-ready system. Its modular nature allows for easy customization, making it a preferred choice for researchers and developers alike.",
+            "more": "You can learn more at ",
+            "link": "https://ai.meta.com/tools/detectron2/"
+        },
+        {
+            "model_name": "SSD (Single Shot MultiBox Detector)",
+            "image": "model_images/SSD.webp",
+            "info": "The model discretizes the output space of bounding boxes into a set of default boxes with varying aspect ratios and scales for each feature map location. The model’s design guarantees efficient detection of objects with different sizes and shapes.. Integrating predictions from multiple feature maps with different resolutions further enhances the model’s ability to handle objects of various sizes.",
+            "more": "You can learn more at ",
+            "link": "https://pytorch.org/hub/nvidia_deeplearningexamples_ssd/"
+        }
+    ],
+
+    "poseDetection": [
+        {
+            "model_name": "OpenPose",
+            "image": "model_images/OpenPose.jpg",
+            "info": "The OpenPose is the first real-time post estimation model developed at Carnegie Mellon University. The model mainly focuses on detecting key points of the human body such as the hand, facial, and foot of multiple people in a real-time scenario. In general, the image is processed with the help of a Convolutional Neural Network (CNN) to generate feature maps of the specific input.",
+            "more": "You can learn more at ",
+            "link": "https://github.com/CMU-Perceptual-Computing-Lab/openpose"
+        },
+        {
+            "model_name": "PoseNet",
+            "image": "model_images/poseNet.png",
+            "info": "This model can detect poses in real-time and works efficiently for single and multi-pose detection of human beings. The PoseNet is a deep learning model that uses TensorFlow to detect different body parts and provides comprehensive skeletal information by joining other key points.",
+            "more": "You can learn more at ",
+            "link": "https://github.com/tensorflow/tfjs-models/tree/master/posenet"
+        },
+        {
+            "model_name": "Lightweight OpenPose",
+            "image": "model_images/lightOpenPose.jpg",
+            "info": "Lightweight OpenPose is an optimized version of the OpenPose approach that focuses on real-time inference without dropping much on the accuracy aspects of the model. The model can detect human poses from each person in the image through different key points.",
+            "more": "You can learn more at ",
+            "link": "https://github.com/Daniil-Osokin/lightweight-human-pose-estimation.pytorch"
+        }
+    ],
+    "objectSegmentation": [
+        {
+            "model_name": "Segment Anything Model (SAM)",
+            "image": "model_images/SAM.jpg",
+            "info": "Segment Anything (SAM) is an image segmentation model developed by Meta Research, capable of doing zero-shot segmentation. Using SAM, you can generate segmentation masks for all of the objects in an image that the model can find, or masks for objects that meet a provided text prompt.",
+            "more": "You can learn more at ",
+            "link": "https://github.com/facebookresearch/segment-anything"
+        },
+        {
+            "model_name": "YOLOv8 Instance Segmentation",
+            "image": "model_images/YOLOv8.webp",
+            "info": "Ultralytics YOLOv8 is a cutting-edge, state-of-the-art (SOTA) model that builds upon the success of previous YOLO versions and introduces new features and improvements to further boost performance and flexibility. YOLOv8 is designed to be fast, accurate, and easy to use, making it an excellent choice for a wide range of object detection and tracking, instance segmentation, image classification and pose estimation tasks.",
+            "more": "You can learn more at ",
+            "link": "https://github.com/ultralytics/ultralytics"
+        },
+        {
+            "model_name": "Mask RCNN",
+            "image": "model_images/maskRCNN.jpg",
+            "info": "Instance segmentation extends object detection by predicting the shape of detected objects in addition to localizing them. Mask RCNN is a convolutional neural network for instance segmentation.",
+            "more": "You can learn more at ",
+            "link": "https://github.com/matterport/Mask_RCNN"
+        }
+    ]
+}
