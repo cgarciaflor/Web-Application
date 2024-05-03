@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Object Detection</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav>
+            <div class="container-nav">
+                <h1 class="logo">FCV</h1>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tableOfCont.html">Learn</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1 id="obj">Object Detection Demo</h1>
+        <div class="sep-line"></div>
+        <section id="obj">
+            <h1>What is this page?</h1>
+            <div class="sep-line"></div>
+            <p>On this page you can get to see how CV can be used to detect
+                objects in an image</p>
+            <p>To see, simply upload an image that is less than 3.5mb and click
+                on the detect button. After a few seconds it will display some
+                information about the image such as the object in it, and how
+                many there are. </p>
+        </section>
+        <section id="obj">
+            <h1>Try it!</h1>
+            <div class="sep-line"></div>
+        </section>
+        <section></section>
+        <section></section>
+        <div class="button-container">
+            <input type="file" id="fileInput" onchange="previewImage()">
+        </div>
+        <div id="imagePreview"></div>
+        <div class="button-container">
+            <button onclick="detectObjects()">Detect Objects</button>
+        </div>
+        <div id="result"></div>
+
+        <div class="bot-navigation">
+            <button onclick="window.location.href='tableOfCont.html'">Table of
+                Contents</button>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="objDetect.js"></script>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Fundamentals of Computer Vision. All rights
+                        reserved.</p>
+                    <p>Contact us: cgarciaf@uncc.edu</p>
+                </div>
+                <div class="footer-links">
+                    <a href="about.html">About</a>
+                    <a href="support.html">Contact</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
