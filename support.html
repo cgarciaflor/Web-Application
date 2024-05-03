@@ -1,49 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <title>Basics of Java</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Support</title>
         <link rel="stylesheet" href="styles.css">
     </head>
-
     <body>
-        <header>
-            <nav class="navbar">
-                    <a href="index.html">Home</a>
-                    <div class="vert-line"></div>
-                    <a href="about.html">About</a>
-                    <div class="vert-line"></div>
-                    <a href="support.html" class="curr-tab">Support</a>
-                    <div class="vert-line"></div>
-                    <a href="learn.html">Learn</a>
-                    <div class="vert-line"></div>
-                    <a href="interaction.html">Test</a>
-            </nav>
-        </header>
+        <nav>
+            <div class="container-nav">
+                <h1 class="logo">FCV</h1>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tableOfCont.html">Learn</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </div>
+        </nav>
         <main>
-            <h1 id="left">Info</h1>
-            <p>If you need any additional assitance with the functionality of
-                the website, links not working or any other questions feel free
-                to reach out in the following ways:</p>
-            
-                <div class="mailto" onclick="location.href='mailto:cgarciaf@uncc.edu';">Send E-Mail</div>
-                <p>If clicking the button doesnt work, email cgarciaf@uncc.edu</p>
+            <section>
+                <h1>Info</h1>
+                <p>If you need any additional assitance with the functionality
+                    of
+                    the website, links not working or any other questions feel
+                    free
+                    to reach out in the following ways:</p>
+
+                <button class="email-button"
+                    onclick="location.href='mailto:cgarciaf@uncc.edu';">Email
+                    Me</button>
+                <p>If clicking the button doesnt work, email
+                    cgarciaf@uncc.edu</p>
                 <p>Phone number: +1 (704) 713 0912</p>
-            
-            <h1 id="left">FAQ</h1>
-            <h3><strong>Will this be updated to include more advance topics? </strong></h3>
-            <p>there is currently no plans to incorperate any intermediate/high level material</p>
-            <h3><strong>Can you request fdor new resources to be added?</strong></h3>
-            <p>Of course just email us using the link above!</p>
-            <h3><strong>Will there be any other languages than Java</strong></h3>
-            <p>As of now there will only be Java</p>
 
-
-
+                <h1>FAQ</h1>
+                <h3><strong>Will the other pages be avaibale anytime
+                        soon?</strong></h3>
+                <p>As of now, there are only 5 pages avaiable to learn about CV,
+                    in the future more will be avaiable</p>
+                <h3><strong>Can you request for new resources to be
+                        added?</strong></h3>
+                <p>Of course just email us using the link above!</p>
+                <h3><strong>Will there be any code avaiable</strong></h3>
+                <p>there is some code example for things like removing image
+                    noise, there will be more advance code for later topics such
+                    as nueral networks</p>
+            </section>
         </main>
 
         <footer>
-            <p>&copy; All rights researved</p>
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Fundamentals of Computer Vision. All rights
+                        reserved.</p>
+                    <p>Contact us: cgarciaf@uncc.edu</p>
+                </div>
+                <div class="footer-links">
+                    <a href="about.html">About</a>
+                    <a href="support.html">Contact</a>
+                </div>
+            </div>
         </footer>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>

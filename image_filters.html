@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Image Formation</title>
+        <title>Image Filters</title>
         <link rel="stylesheet" href="styles.css">
 
         <link rel="stylesheet"
@@ -15,6 +15,9 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
             integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
     </head>
     <body>
         <nav>
@@ -29,94 +32,94 @@
             </div>
         </nav>
         <main>
-            <h1>Image Formation </h1>
+            <h1>Image Processing and Filters </h1>
 
             <section class="alt">
-                <h2>What are images?</h2>
+                <h2>Noise</h2>
                 <div class="sep-line"></div>
-                <p> Images are a projection of 3D scene onto 2D plane.</p>
-                <p>We need to understand
-                    the geometric and photometric relation between the scene and
-                    its
-                    image.
+                <p> Images are corrupted by “noise” mostly during
+                    acquisition</p>
+                <p>Signal Processing techniques can be used to model and remove
+                    this
+                    noise
                 </p>
-                <p>To do so we should understand:
+                <p>Types of noise:
                 </p>
                 <ul>
-                    <li>Pinhole and Perspective Projection</li>
-                    <li>Image formation using Lenses</li>
+                    <li>Salt & Pepper</li>
+                    <li>Impulse</li>
+                    <li>Gaussian </li>
                 </ul>
             </section>
 
             <section>
-                <h2>Pinhole and Perspective Projection</h2>
+                <h2>Image filtering</h2>
                 <div class="sep-line"></div>
-                <h3>Pinhole Projection</h3>
-                <p>The pinhole projection model is one of the simplest yet most
-                    crucial concepts in understanding how images are formed in
-                    cameras. At its core, it involves light passing through a
-                    small aperture (the "pinhole") and projecting an inverted
-                    image onto a surface placed behind it. This model operates
-                    on the principle of light rays traveling in straight lines.
-                    Each point in the scene being captured emits light rays in
-                    all directions, but only those that pass through the pinhole
-                    and hit the imaging plane create the final image.</p>
+                <p>Image filtering is a fundamental technique in image
+                    processing and computer vision used to enhance or modify
+                    images by applying various mathematical operations to each
+                    pixel or neighborhood of pixels. These operations can
+                    include smoothing, sharpening, edge detection, noise
+                    reduction, and more. Image filtering plays a crucial role in
+                    tasks such as feature extraction, image enhancement, object
+                    recognition, and noise reduction.</p>
 
-                <h3>Perspective Projection</h3>
-                <p>Perspective projection builds upon the pinhole model,
-                    incorporating additional complexities such as the notion of
-                    perspective and depth. In perspective projection, objects
-                    that are farther away from the camera appear smaller in the
-                    image compared to objects that are closer. This effect
-                    mimics how our eyes perceive depth in the real world,
-                    creating a sense of three-dimensionality in the captured
-                    image.</p>
-
-                <h3>How They Are Used</h3>
-                <p>Pinhole and perspective projection are used extensively in
-                    various fields, including computer graphics, computer
-                    vision, photography, and cinematography. In computer vision,
-                    these concepts serve as the basis for understanding how
-                    cameras capture images of the world and how these images can
-                    be processed and analyzed by algorithms.</p>
-                <p>Computer vision applications often rely on camera
-                    calibration, which involves determining the intrinsic
-                    parameters of a camera (such as focal length, principal
-                    point, and lens distortion) to accurately interpret images
-                    and extract meaningful information from them. Pinhole and
-                    perspective projection models play a crucial role in this
-                    calibration process, allowing computer vision systems to
-                    understand how objects in a scene are projected onto the
-                    camera sensor.</p>
-                <p>Understanding pinhole and perspective projection is essential
-                    for several reasons:</p>
+                <p>Uses of filtering:</p>
                 <ul>
-
-                    <li><strong>Camera Calibration:</strong> Proper calibration
-                        enables accurate
-                        measurements and reconstructions of objects in a scene,
-                        which is vital for applications such as 3D
-                        reconstruction, object tracking, and augmented
-                        reality.</li>
-                    <li><strong>Depth Perception:</strong> Perspective
-                        projection provides depth
-                        cues in images, allowing computer vision algorithms to
-                        estimate the distance to objects in a scene. This depth
-                        information is crucial for tasks like scene
-                        understanding, obstacle avoidance, and robotic
-                        navigation</li>
-                    <li><strong>Image Formation:</strong> Knowledge of how
-                        images are formed
-                        helps
-                        in designing and optimizing camera systems for specific
-                        applications, such as surveillance, autonomous vehicles,
-                        medical imaging, and industrial inspection.</li>
+                    <li>Enhance an image (denoise, resize, increase contrast,
+                        etc)</li>
+                    <li>Extract information (texture, edges, interest points,
+                        etc)</li>
+                    <li>Detect patterns (template matching)</li>
+                </ul>
+                <p>Types of filtering:</p>
+                <ul>
+                    <li>Linear Filters: Linear filters apply a linear
+                        transformation to the pixel values in the image or a
+                        neighborhood of pixels. Common linear filters
+                        include:</li>
+                    <ul>
+                        <li><strong>Smoothing Filters:</strong> Reduce image
+                            noise and detail by averaging pixel values within a
+                            local region. Gaussian blur and mean filter are
+                            examples of smoothing filters.
+                        </li>
+                        <li><strong>Sharpening Filters</strong> Enhance image
+                            details and edges by accentuating high-frequency
+                            components. Examples include the Laplacian filter
+                            and the Sobel operator.</li>
+                        <li><strong>Edge Detection Filters:</strong> highlight
+                            edges and boundaries in images by detecting abrupt
+                            changes in pixel intensity.</li>
+                    </ul>
+                    <li>Non-linear Filters: Non-linear filters apply operations
+                        that are not linear combinations of pixel values. They
+                        are often used for tasks such as noise reduction and
+                        image enhancement. Examples include:</li>
+                    <ul>
+                        <li><strong>Median Filter:</strong> Replaces each pixel
+                            value with the median value of its neighborhood,
+                            effectively reducing impulse noise (such as
+                            salt-and-pepper noise).
+                        </li>
+                        <li><strong>Bilateral Filter:</strong> Smooths images
+                            while preserving edges by considering both spatial
+                            and intensity differences between pixels.</li>
+                        <li><strong>Anisotropic Diffusion: </strong>
+                            Diffusion-based filtering method that selectively
+                            smooths image regions while preserving strong
+                            edges.</li>
+                    </ul>
                 </ul>
                 <div class="your-class">
                     <div>
-                        <img
-                            src="images/Perspective-projection-of-the-pin-hole-camera-model-without-distortion.png"
-                            alt=" ">
+                        <a
+                            href="images/Perspective-projection-of-the-pin-hole-camera-model-without-distortion.png"
+                            class="popup-link">
+                            <img
+                                src="images/Perspective-projection-of-the-pin-hole-camera-model-without-distortion.png"
+                                alt=" ">
+                        </a>
                     </div>
                     <div>
                         <img
@@ -124,10 +127,6 @@
                             alt=" ">
                     </div>
                 </div>
-                <h3>Limitatioins</h3>
-                <p>Pinholes pass less light and hence
-                    require long exposures to capture
-                    bright images</p>
             </section>
 
             <section>
@@ -202,11 +201,11 @@
         </main>
 
         <div class="bot-navigation">
-            <button onclick="window.location.href='introCV.html'">Previous
+            <button onclick="window.location.href='image_formation.html'">Previous
                 Page</button>
             <button onclick="window.location.href='tableOfCont.html'">Table of
                 Contents</button>
-            <button onclick="window.location.href='image_filters.html'">Next Page</button>
+            <button onclick="window.location.href=''">Next Page</button>
         </div>
 
         <script
@@ -224,7 +223,11 @@
             integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
         <script src="script.js"></script>
+
         <footer>
             <div class="footer-content">
                 <div class="footer-text">
@@ -238,6 +241,5 @@
                 </div>
             </div>
         </footer>
-
     </body>
 </html>

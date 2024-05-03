@@ -1,71 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <title>Basics of Java</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About US</title>
+        <link rel="stylesheet"
+            href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <link rel="stylesheet" href="styles.css">
-    </head>
 
+    </head>
     <body>
-        <header>
-            <nav class="navbar">
-                    <a href="index.html">Home</a>
-                    <div class="vert-line"></div>
-                    <a href="about.html" class="curr-tab">About</a>
-                    <div class="vert-line"></div>
-                    <a href="support.html">Support</a>
-                    <div class="vert-line"></div>
-                    <a href="learn.html">Learn</a>
-                    <div class="vert-line"></div>
-                    <a href="interaction.html">Test</a>
-            </nav>
-        </header>
+        <nav>
+            <div class="container-nav">
+                <h1 class="logo">FCV</h1>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tableOfCont.html">Learn</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </div>
+        </nav>
         <main>
-            <h1> About Us </h1>
-            <p>Hello my name is Cristian Garcia Flores and I am currently a
-                student at UNC Charlotte and the purpose of this website is a
-                project for the class ITIS-3155: Web-Based Application Design and Development currently being taken
-                in the spring of 2024</p>
-            <p>You can follow any of these socials to get in contact personaly or follow any of my other productions.  
-            </p>
+            <section>
+            </section>
+
+            <section id="tabs">
+                <ul>
+                    <li><a href="#Creator">Creator</a></li>
+                    <li><a href="#Client">Client</a></li>
+                </ul>
+                <div id="Creator">
+                    <h1>About Us</h1>
+                    <p>Hello my name is Cristian Garcia Flores and I am
+                        currently a student at UNC Charlotte and the purpose of
+                        this website is a project for the class ITIS-3155:
+                        Web-Based Application Design and Development currently
+                        being taken in the spring of 2024</p>
+                    <h1>Social Media</h1>
+                    <div class="social-card">
+                        <a href="https://github.com/cgarciaflor"
+                            target="_blank">
+                            <img src="images/GitHub_Invertocat_Logo.svg.png"
+                                alt="GitHub">
+                            <h2>GitHub</h2>
+                        </a>
+                    </div>
+                    <div class="social-card">
+                        <a href="https://www.linkedin.com/in/cgarciaflor/"
+                            target="_blank">
+                            <img
+                                src="images/linkedin-logo-linkedin-icon-transparent-free-png.webp"
+                                alt="Twitter">
+                            <h2>LinkedIn</h2>
+                        </a>
+                    </div>
+                    <div class="social-card">
+                        <a
+                            href="https://www.youtube.com/channel/UCWgP8XVljtnUKlR98s1JT_w"
+                            target="_blank">
+                            <img
+                                src="images/360_F_474059464_qldYuzxaUWEwNTtYBJ44VN89ARuFktHW.jpg"
+                                alt="Instagram">
+                            <h2>Youtube</h2>
+                        </a>
+                    </div>
+                </div>
+                <div id="Client">
+                    <img id="kobeChen"
+                        src="images/Screenshot 2024-04-26 233844.png">
+                    <h3>Kobe Chen (Asian)</h3>
+                    <p>30 years old, graduated from the University of Oklahoma,
+                        curently works as a data consultant with Kubrick
+                        Consulting in New York</p>
+                    <div class="social-card">
+                        <a href="https://www.linkedin.com/in/chenkobe"
+                            target="_blank">
+                            <img
+                                src="images/linkedin-logo-linkedin-icon-transparent-free-png.webp"
+                                alt="Twitter">
+                            <h2>LinkedIn</h2>
+                        </a>
+                    </div>
+                </div>
+            </section>
         </main>
-        <div class="row">
-            <a href="https://github.com/cgarciaflor" target="_blank">
-            <div class="column">
-              <div class="card">
-                <img src="images/GitHub_Invertocat_Logo.svg.png" alt="GitHub" style="width:100%">
-                <div class="container">
-                  <h2>GitHub</h2>
-                </div>
-              </div>
-            </div>
-            </a>
-          <a href="https://www.linkedin.com/in/cgarciaflor/" target="_blank">
-            <div class="column">
-              <div class="card">
-                <img src="images/linkedin-logo-linkedin-icon-transparent-free-png.webp" alt="LinkedIn" style="width:100%">
-                <div class="container">
-                  <h2>LinkedIn</h2>
-                </div>
-              </div>
-            </div>
-            </a>
-          <a href="https://www.youtube.com/channel/UCWgP8XVljtnUKlR98s1JT_w" target="_blank">
-            <div class="column">
-              <div class="card">
-                <img src="images\360_F_474059464_qldYuzxaUWEwNTtYBJ44VN89ARuFktHW.jpg" alt="Youtube" style="width:100%">
-                <div class="container">
-                  <h2>Youtube</h2>
-                </div>
-              </div>
-            </div>
-          </a>
-          </div>
+
         <footer>
-            <p>&copy; All rights researved</p>
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Fundamentals of Computer Vision. All rights
+                        reserved.</p>
+                    <p>Contact us: cgarciaf@uncc.edu</p>
+                </div>
+                <div class="footer-links">
+                    <a href="about.html">About</a>
+                    <a href="support.html">Contact</a>
+                </div>
+            </div>
         </footer>
-        <div>
-          <p></p>
-        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="script.js"></script>
     </body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script.js"></script>
 </html>

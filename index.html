@@ -1,74 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <title>Basics of Java</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fundamentals of Computer Vision</title>
         <link rel="stylesheet" href="styles.css">
+
     </head>
-
     <body>
-        <header>
-            <nav class="navbar">
-
-                <a href="index.html" class="curr-tab">Home</a>
-                <div class="vert-line"></div>
-                <a href="about.html">About</a>
-                <div class="vert-line"></div>
-                <a href="support.html">Support</a>
-                <div class="vert-line"></div>
-                <a href="learn.html">Learn</a>
-                <div class="vert-line"></div>
-                <a href="interaction.html">Test</a>
-
-            </nav>
-        </header>
-
-        <main>
-            <div class="header">
-                <img src="images/1ca7b34a8d5308a03ae186dfe72caabce0327fe2-1456x816.webp"
-                    class="header-image">
-                <h1 class="header-title">Basics of Java</h1>
+        <nav>
+            <div class="container-nav">
+                <h1 class="logo">FCV</h1>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tableOfCont.html">Learn</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
             </div>
-            <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                var header = document.querySelector(".header");
-                var headerTitle = document.querySelector(".header-title");
-                
-            
-                window.addEventListener("scroll", function () {
-                    var scrollPosition = window.scrollY;
-            
-                    if (scrollPosition > header.clientHeight) {
-                        headerTitle.style.opacity = "0";
-                    } else {
-                        headerTitle.style.opacity = "1";
-                    }
-                });
-            });
-            </script>
+        </nav>
 
-            <h3>Welcome</h3>
-            <p>Hello,</p>
-            <p>Welcome to my website. This website is a tool for those who are
-                new to programming or just want to learn a little more about
-                Java. Here you will be linked to videos and resources which
-                teach you the basics and fundamentals of Java and compare it to
-                python so you can see the similarities and differences between
-                two of the most popular programing languages at the end you will
-                be able to play a game which cover the things you should of
-                learned to test your skills</p>
+        <div class="initial-section">
+            <div class="text">
+                <h1>Fundamentals of Computer Vision</h1>
+            </div>
+            <img src="images/CV-init.webp" alt="Computer Vision">
+        </div>
 
-                <p>To get started on your jounry </p>
-                <div>
-                    <form class="inline-style" action="learn.html" method="get">
-                        <button>Get Started!</button>
-                    </form>
-                </div>
+        <div class="section">
+            <div class="text">
+                <h2>What is it?</h2>
+                <p>Computer vision is a field of artificial intelligence that
+                    enables computers to interpret and understand visual
+                    information from the real world, akin to how humans perceive
+                    and interpret images and videos.</p>
+            </div>
+            <img src="images/CV-home-sec1.png"
+                alt="Image 1">
+        </div>
 
-        </main>
+        <div class="text-section">
+            <div class="text">
+                <h1>What are some applications?</h1>
+            </div>
+        </div>
+
+        <div class="section">
+            <img src="images/CV-home-PD.jpg" alt="Guy looking into computer">
+            <div class="text">
+                <h2>Pose Detection</h2>
+            </div>
+        </div>
+
+        <div class="section">
+            <img src="images/CV-home-OD.jpg"
+                alt="People running with estemated poses onto them">
+            <div class="text">
+                <h2>Object Detection</h2>
+            </div>
+        </div>
+
+        <div class="section">
+            <img src="images/CV-home-seg.jpeg"
+                alt="Image of a city being segemented into different classes">
+            <div class="text">
+                <h2>Object Segmentation</h2>
+            </div>
+        </div>
+
+        <div class="button-section">
+            <div class="button-content">
+                <p>Ready to explore more?</p>
+                <button onclick="window.location.href='tableOfCont.html'">LETS
+                    GO</button>
+            </div>
+        </div>
 
         <footer>
-            <p>&copy; All rights researved</p>
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Fundamentals of Computer Vision. All rights
+                        reserved.</p>
+                    <p>Contact us: cgarciaf@uncc.edu</p>
+                </div>
+                <div class="footer-links">
+                    <a href="about.html">About</a>
+                    <a href="support.html">Contact</a>
+                </div>
+            </div>
         </footer>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>

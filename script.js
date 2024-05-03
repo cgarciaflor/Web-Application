@@ -20,3 +20,17 @@ $(document).ready(function() {
 $(document).ready(function() {
     $("#tabs").tabs();
 });
+
+$(document).ready(function() {
+    $('.popup-link').magnificPopup({
+        type: 'image', // Other types include 'iframe', 'inline', 'ajax'
+        gallery:{
+            enabled:true // Enable gallery mode
+        },
+        closeOnBgClick: true // Close popup when clicking on background
+    });
+});
+
+$(document).ready(function(){
+    $('.your-class').slick();
+  });
