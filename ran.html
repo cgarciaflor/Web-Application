@@ -7,12 +7,26 @@
 </head>
 <body>
     <h1>Object Detection</h1>
-    <input type="file" id="fileInput">
+    <input type="file" id="fileInput" onchange="previewImage()">
+    <div id="imagePreview"></div>
     <button onclick="detectObjects()">Detect Objects</button>
     <div id="result"></div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
+        function previewImage() {
+            var fileInput = document.getElementById('fileInput');
+            var file = fileInput.files[0];
+            
+            var imagePreview = document.getElementById('imagePreview');
+            imagePreview.innerHTML = ''; // Clear previous image preview
+            
+            var img = document.createElement('img');
+            img.src = URL.createObjectURL(file);
+            img.style.maxWidth = '100%'; // Set maximum width for the image
+            imagePreview.appendChild(img);
+        }
+
         function detectObjects() {
             var fileInput = document.getElementById('fileInput');
             var file = fileInput.files[0];
