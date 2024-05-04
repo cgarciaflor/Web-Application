@@ -47,9 +47,27 @@
                 </p>
                 <ul>
                     <li>Salt & Pepper</li>
-                    <li>Impulse</li>
-                    <li>Gaussian </li>
+                    <li>Gaussian</li>
                 </ul>
+                <div class="img-slides">
+                    <div>
+                        <a
+                            href="images/SnP.png"
+                            class="popup-image">
+                            <img
+                                src="images/SnP.png"
+                                alt=" ">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="images/gaus.png"
+                            class="popup-image">
+                            <img
+                                src="images/guas.png"
+                                alt=" ">
+                        </a>
+                    </div>
+                </div>
             </section>
 
             <section>
@@ -74,7 +92,7 @@
                 </ul>
                 <p>Types of filtering:</p>
                 <ul>
-                    <li>Linear Filters: Linear filters apply a linear
+                    <li><strong>Filters:</strong> Linear filters apply a linear
                         transformation to the pixel values in the image or a
                         neighborhood of pixels. Common linear filters
                         include:</li>
@@ -84,7 +102,7 @@
                             local region. Gaussian blur and mean filter are
                             examples of smoothing filters.
                         </li>
-                        <li><strong>Sharpening Filters</strong> Enhance image
+                        <li><strong>Sharpening Filters:</strong> Enhance image
                             details and edges by accentuating high-frequency
                             components. Examples include the Laplacian filter
                             and the Sobel operator.</li>
@@ -92,118 +110,157 @@
                             edges and boundaries in images by detecting abrupt
                             changes in pixel intensity.</li>
                     </ul>
-                    <li>Non-linear Filters: Non-linear filters apply operations
-                        that are not linear combinations of pixel values. They
-                        are often used for tasks such as noise reduction and
+                    <div class="img-slides">
+                        <div>
+                            <a href="images/smooth.png"
+                                class="popup-image">
+                                <img
+                                    src="images/smooth.png"
+                                    alt=" ">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="images/sharp.png"
+                                class="popup-image">
+                                <img
+                                    src="images/sharp.png"
+                                    alt=" ">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="images/edge-detect.png"
+                                class="popup-image">
+                                <img src="images/edge-detect.png"
+                                    alt=" ">
+                            </a>
+                        </div>
+                    </div>
+
+                    <li><strong>Non-linear Filters:</strong> Non-linear
+                        filters apply operations
+                        that are not linear combinations of pixel
+                        values. They
+                        are often used for tasks such as noise reduction
+                        and
                         image enhancement. Examples include:</li>
                     <ul>
-                        <li><strong>Median Filter:</strong> Replaces each pixel
-                            value with the median value of its neighborhood,
+                        <li><strong>Median Filter:</strong> Replaces
+                            each pixel
+                            value with the median value of its
+                            neighborhood,
                             effectively reducing impulse noise (such as
                             salt-and-pepper noise).
                         </li>
-                        <li><strong>Bilateral Filter:</strong> Smooths images
-                            while preserving edges by considering both spatial
-                            and intensity differences between pixels.</li>
+                        <li><strong>Bilateral Filter:</strong> Smooths
+                            images
+                            while preserving edges by considering both
+                            spatial
+                            and intensity differences between
+                            pixels.</li>
                         <li><strong>Anisotropic Diffusion: </strong>
-                            Diffusion-based filtering method that selectively
-                            smooths image regions while preserving strong
+                            Diffusion-based filtering method that
+                            selectively
+                            smooths image regions while preserving
+                            strong
                             edges.</li>
                     </ul>
+                    <div class="img-slides">
+                        <div>
+                            <a href="images/median.jpg"
+                                class="popup-image">
+                                <img
+                                    src="images/median.jpg"
+                                    alt=" ">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="images/bilateral.png"
+                                class="popup-image">
+                                <img
+                                    src="images/bilateral.png"
+                                    alt=" ">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="images/Anisotropic.png"
+                                class="popup-image">
+                                <img src="images/Anisotropic.png"
+                                    alt=" ">
+                            </a>
+                        </div>
+                    </div>
                 </ul>
-                <div class="your-class">
+            </section>
+
+            <section>
+                <h2>How do we deal with noise?</h2>
+                <div class="sep-line"></div>
+                <p><strong>Averaging filter</strong></p>
+                <p>One way we can deal with this is by replace each pixel with
+                    an average of all the values in its
+                    neighborhood</p>
+
+                <div class="img-slides">
                     <div>
-                        <a
-                            href="images/Perspective-projection-of-the-pin-hole-camera-model-without-distortion.png"
-                            class="popup-link">
+                        <a href="images/avg-step1.png"
+                            class="popup-image">
                             <img
-                                src="images/Perspective-projection-of-the-pin-hole-camera-model-without-distortion.png"
+                                src="images/avg-step1.png"
                                 alt=" ">
                         </a>
                     </div>
                     <div>
-                        <img
-                            src="images/Perspective-projection-of-two-points-via-the-pinhole-camera-model.png"
-                            alt=" ">
+                        <a href="images/avg-step2.png"
+                            class="popup-image">
+                            <img
+                                src="images/avg-step2.png"
+                                alt=" ">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="images/avg-step3.png"
+                            class="popup-image">
+                            <img src="images/avg-step3.png"
+                                alt=" ">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="images/avg-step-final.png"
+                            class="popup-image">
+                            <img src="images/avg-step-final.png"
+                                alt=" ">
+                        </a>
                     </div>
                 </div>
-            </section>
-
-            <section>
-                <h2>Image Formation using Lenses</h2>
-                <div class="sep-line"></div>
-                <p>Lenses are optical components designed to focus light onto a
-                    sensor or film, altering the path of incoming light rays
-                    through refraction. They come in various shapes and designs,
-                    each with specific properties that affect image formation,
-                    such as focal length, aperture size, and lens
-                    aberrations.</p>
-                <p>When light rays pass through a lens, they converge or diverge
-                    based on the lens's curvature and refractive properties.
-                    Unlike the pinhole model, which relies on a single point of
-                    light passing through a tiny aperture, lenses can gather
-                    light from a broader area, allowing for brighter and sharper
-                    images.</p>
-                <p>The process of image formation with lenses involves several
-                    key elements:</p>
-
+                <p>This is commonly known as a box filter and can be of any
+                    kernel size as long as it follows the following:
+                </p>
+                <a href="images/box-filter.png"
+                    class="popup-image">
+                    <img src="images/box-filter.png">
+                </a>
+                <p><strong>Boundary issues</strong></p>
+                <p>The filter window falls off the edge of the image</p>
+                <p>Some ways to counter this: </p>
                 <ul>
-                    <li><strong>Focal Length:</strong> The distance between the
-                        lens and its
-                        focal point, where parallel rays of light converge after
-                        passing through the lens. Focal length determines the
-                        magnification and field of view of the resulting image.
-                    </li>
-                    <li><strong>Aperture:</strong> The opening in the lens that
-                        controls the
-                        amount of light entering the camera. Adjusting the
-                        aperture size regulates the depth of field and
-                        influences the overall brightness and sharpness of the
-                        image.</li>
-                    <li><strong>Lens Aberrations:</strong> Imperfections in lens
-                        design that can
-                        distort or degrade image quality. Common aberrations
-                        include spherical aberration, chromatic aberration, and
-                        distortion, which can affect the clarity, color
-                        accuracy, and geometry of the captured image.</li>
+                    <li>clip filter (black)</li>
+                    <li>wrap around</li>
+                    <li>copy edge, so extend the edges</li>
+                    <li>Reflect across edge</li>
                 </ul>
-                <div class="your-class">
-                    <div>
-                        <img
-                            src="images/img-formation-using-lens.webp"
-                            alt=" ">
-                    </div>
-                    <div>
-                        <img
-                            src="images/Screenshot 2024-05-02 134805.png"
-                            alt=" ">
-                    </div>
-                    <div>
-                        <img src="images/Screenshot 2024-05-02 134855.png"
-                            alt=" ">
-                    </div>
-                </div>
             </section>
 
             <section>
-                <h2>Digital Images</h2>
-                <div class="sep-line"></div>
-                <p>A digital image is an array of numbers indicating the image
-                    irradiance at various points on the image plane</p>
-                <p> Image intensities are spatially sampled. This means that we
-                    sample the 2D space on a regular grid</p>
-                <p>ntensity values are quantized (8-bits, 10-bits, 12-bits),
-                    meaning we quantize each sample (round to nearest
-                    integer)</p>
-                <p>Thus, images can be represented as a matrix of int values</p>
-                <img src="images/Screenshot 2024-05-02 152645.png">
             </section>
         </main>
 
         <div class="bot-navigation">
-            <button onclick="window.location.href='image_formation.html'">Previous
+            <button
+                onclick="window.location.href='image_formation.html'">Previous
                 Page</button>
-            <button onclick="window.location.href='tableOfCont.html'">Table of
+            <button
+                onclick="window.location.href='tableOfCont.html'">Table
+                of
                 Contents</button>
             <button onclick="window.location.href=''">Next Page</button>
         </div>
@@ -211,17 +268,20 @@
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
             integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"></script>
 
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"
             integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"></script>
 
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
             integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"></script>
 
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
@@ -231,7 +291,8 @@
         <footer>
             <div class="footer-content">
                 <div class="footer-text">
-                    <p>&copy; 2024 Fundamentals of Computer Vision. All rights
+                    <p>&copy; 2024 Fundamentals of Computer Vision. All
+                        rights
                         reserved.</p>
                     <p>Contact us: cgarciaf@uncc.edu</p>
                 </div>

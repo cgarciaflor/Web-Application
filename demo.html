@@ -18,7 +18,7 @@
                 </ul>
             </div>
         </nav>
-        <h1 id="obj">Object Detection Demo</h1>
+        <h1 id="objT">Object Detection Demo</h1>
         <div class="sep-line"></div>
         <section id="obj">
             <h1>What is this page?</h1>
@@ -29,27 +29,28 @@
                 on the detect button. After a few seconds it will display some
                 information about the image such as the object in it, and how
                 many there are. </p>
-        </section>
-        <section id="obj">
+
             <h1>Try it!</h1>
+            <p>(only works with png and jpg images)</p>
             <div class="sep-line"></div>
+
+            <section></section>
+            <section></section>
+            <div class="button-container">
+                <input type="file" id="fileInput" onchange="previewImage()">
+            </div>
+            <div id="imagePreview"></div>
+            <div class="button-container">
+                <button id="detect" onclick="detectObjects()">Detect Objects</button>
+            </div>
+            <div id="result"></div>
+
+            <div class="bot-navigation">
+                <button onclick="window.location.href='tableOfCont.html'">Table
+                    of
+                    Contents</button>
+            </div>
         </section>
-        <section></section>
-        <section></section>
-        <div class="button-container">
-            <input type="file" id="fileInput" onchange="previewImage()">
-        </div>
-        <div id="imagePreview"></div>
-        <div class="button-container">
-            <button onclick="detectObjects()">Detect Objects</button>
-        </div>
-        <div id="result"></div>
-
-        <div class="bot-navigation">
-            <button onclick="window.location.href='tableOfCont.html'">Table of
-                Contents</button>
-        </div>
-
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="objDetect.js"></script>
 

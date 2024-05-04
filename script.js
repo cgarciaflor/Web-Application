@@ -22,15 +22,18 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    $('.popup-link').magnificPopup({
-        type: 'image', // Other types include 'iframe', 'inline', 'ajax'
+    $('.popup-image').magnificPopup({
+        type: 'image',
         gallery:{
-            enabled:true // Enable gallery mode
+            enabled:true 
         },
-        closeOnBgClick: true // Close popup when clicking on background
+        closeOnBgClick: true 
     });
 });
 
 $(document).ready(function(){
-    $('.your-class').slick();
+    $('.img-slides').slick({
+        dots: true,
+        arrows: true
+    });
   });
