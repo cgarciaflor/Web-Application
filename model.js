@@ -1,10 +1,9 @@
 $(document).ready(function() {
-    // Fetch JSON data using AJAX
     $.ajax({
         url: 'https://webpages.charlotte.edu/cgarciaf/project/models.json', 
         dataType: 'json',
         success: function(data) {
-            // Process JSON data and generate HTML content for each section
+            
             displaySection(data.objDetection, 'objDetectionSection');
             displaySection(data.poseDetection, 'poseDetectionSection');
             displaySection(data.objectSegmentation, 'objectSegmentationSection');
@@ -14,11 +13,10 @@ $(document).ready(function() {
         }
     });
 
-    // Function to generate HTML content for each section
+    
     function displaySection(models, sectionId) {
         var section = $('#' + sectionId);
 
-        // Loop through each model and generate HTML content
         $.each(models, function(index, model) {
             var modelHtml = `
                 <div class="model">

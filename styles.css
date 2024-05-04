@@ -4,6 +4,8 @@ html {
     padding: 0;
 }
 
+/* Home Page styles */
+
 .initial-section {
     height: 100vh;
     display: flex;
@@ -89,6 +91,11 @@ img {
 .section.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/*Table of Contents styles*/
+#headers-odd{
+    background-color: #f0f0f0;
 }
 
 /* Button section styles */
@@ -226,7 +233,7 @@ section {
     padding: 20px;
 }
 
-/** About page social cards **/
+/* About page social cards styles */
 .social-card {
     display: inline-block;
     margin: 20px;
@@ -235,18 +242,14 @@ section {
     overflow: hidden;
     width: 200px;
     position: relative;
-    /* Add position relative for hover effect */
 }
 
 .social-card img {
     width: 100%;
     height: auto;
     display: block;
-    /* Center image horizontally */
     margin: 0 auto;
-    /* Center image vertically */
     transition: transform 0.3s ease;
-    /* Add transition for hover effect */
 }
 
 .social-card h2 {
@@ -304,6 +307,7 @@ ul li a:hover {
     height: 400px;
 }
 
+/* bottom page button styles*/
 .bot-navigation {
     text-align: center;
     margin-top: 20px;
@@ -323,13 +327,14 @@ ul li a:hover {
 .bot-navigation button:hover {
     background-color: #555;
 }
-
+/*a general style*/
 .sep-line {
     display: block;
     height: 1px;
     background-color: #d1c7c7;
 }
 
+/* Demo page styles*/
 .button-container {
     display: flex;
     flex-direction: column;
@@ -377,10 +382,7 @@ ul li a:hover {
     text-align: center; 
 }
 
-#headers-odd{
-    background-color: #f0f0f0;
-}
-
+/*model page styles*/
 .model {
     margin-bottom: 20px;
 }

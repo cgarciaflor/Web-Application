@@ -7,7 +7,7 @@ function previewImage() {
     
     var img = document.createElement('img');
     img.src = URL.createObjectURL(file);
-    img.style.maxWidth = '100%'; // Set maximum width for the image
+    img.style.maxWidth = '100%'; 
     imagePreview.appendChild(img);
 }
 
@@ -31,7 +31,7 @@ function detectObjects() {
     };
 
     $.ajax(settings).done(function (response) {
-        console.log(response); // Print the JSON response to the console
+        console.log(response); 
         displayResults(response);
     }).fail(function (jqXHR, textStatus, errorThrown) {
         console.log("Error:", textStatus, errorThrown);
