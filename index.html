@@ -9,7 +9,7 @@
     </head>
     <body>
         <nav>
-            <div class="container-nav">
+            <div class="container-nav" role="navigation" aria-label="Primary">
                 <h1 class="logo">FCV</h1>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
@@ -19,12 +19,11 @@
                 </ul>
             </div>
         </nav>
-
         <div class="initial-section">
             <div class="text">
                 <h1>Fundamentals of Computer Vision</h1>
             </div>
-            <img src="images/CV-init.webp" alt="Computer Vision">
+            <img src="images/CV-init.webp" alt="Computer Vision" role="img" aria-labelledby="pose-img">
         </div>
 
         <div class="section">
@@ -36,7 +35,7 @@
                     and interpret images and videos.</p>
             </div>
             <img src="images/CV-home-sec1.png"
-                alt="Image 1">
+            alt="Guy looking into computer" role="img" aria-labelledby="old-computer-img">
         </div>
 
         <div class="text-section">
@@ -46,7 +45,7 @@
         </div>
 
         <div class="section">
-            <img src="images/CV-home-PD.jpg" alt="Guy looking into computer">
+            <img src="images/CV-home-PD.jpg" alt="pose detection" role="img" aria-labelledby="pose-img">
             <div class="text">
                 <h2>Pose Detection</h2>
             </div>
@@ -54,7 +53,7 @@
 
         <div class="section">
             <img src="images/CV-home-OD.jpg"
-                alt="People running with estemated poses onto them">
+                alt="objects with bounding boxes on them" role="img" aria-labelledby="obj-dectection-img">
             <div class="text">
                 <h2>Object Detection</h2>
             </div>
@@ -62,7 +61,7 @@
 
         <div class="section">
             <img src="images/CV-home-seg.jpeg"
-                alt="Image of a city being segemented into different classes">
+                alt="Image of a city being segemented into different classes" role="img" aria-labelledby="obj-segmentation-img">
             <div class="text">
                 <h2>Object Segmentation</h2>
             </div>
@@ -77,7 +76,7 @@
         </div>
 
         <footer>
-            <div class="footer-content">
+            <div class="footer-content" role="navigation" aria-label="Secondary">
                 <div class="footer-text">
                     <p>&copy; 2024 Fundamentals of Computer Vision. All rights
                         reserved.</p>

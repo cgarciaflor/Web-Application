@@ -21,7 +21,7 @@
     </head>
     <body>
         <nav>
-            <div class="container-nav">
+            <div class="container-nav" role="navigation" aria-label="Primary">
                 <h1 class="logo">FCV</h1>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
@@ -115,14 +115,14 @@
                         applications, such as surveillance, autonomous vehicles,
                         medical imaging, and industrial inspection.</li>
                 </ul>
-                <div class="img-slides">
+                <div class="img-slides" role="img" aria-labelledby="pin-hole-img">
                     <div>
                         <a
                             href="images/Perspective-projection-of-the-pin-hole-camera-model-without-distortion.png"
                             class="popup-image">
                             <img
                                 src="images/Perspective-projection-of-the-pin-hole-camera-model-without-distortion.png"
-                                alt=" ">
+                                alt="pin-hole ">
                         </a>
                     </div>
                     <div>
@@ -131,7 +131,7 @@
                             class="popup-image">
                             <img
                                 src="images/Perspective-projection-of-two-points-via-the-pinhole-camera-model.png"
-                                alt=" ">
+                                alt=" pin-hole">
                         </a>
                     </div>
                 </div>
@@ -179,13 +179,13 @@
                         distortion, which can affect the clarity, color
                         accuracy, and geometry of the captured image.</li>
                 </ul>
-                <div class="img-slides">
+                <div class="img-slides" role="img" aria-labelledby="img-formation-using-lens">
                     <div>
                         <a href="images/img-formation-using-lens.webp"
                             class="popup-image">
                             <img
                                 src="images/img-formation-using-lens.webp"
-                                alt=" ">
+                                alt=" img-formation-using-lens">
                         </a>
                     </div>
                     <div>
@@ -193,14 +193,14 @@
                             class="popup-image">
                             <img
                                 src="images/Screenshot 2024-05-02 134805.png"
-                                alt=" ">
+                                alt="img-formation-using-lens ">
                         </a>
                     </div>
                     <div>
                         <a href="images/Screenshot 2024-05-02 134855.png"
                             class="popup-image">
                             <img src="images/Screenshot 2024-05-02 134855.png"
-                                alt=" ">
+                                alt=" img-formation-using-lens">
                         </a>
                     </div>
                 </div>
@@ -218,8 +218,8 @@
                     integer)</p>
                 <p>Thus, images can be represented as a matrix of int values</p>
                 <a href="images/Screenshot 2024-05-02 152645.png"
-                    class="popup-image">
-                    <img src="images/Screenshot 2024-05-02 152645.png">
+                    class="popup-image" role="img" aria-labelledby="img-as-function">
+                    <img src="images/Screenshot 2024-05-02 152645.png" alt="img as a function">
                 </a>
             </section>
         </main>
@@ -254,7 +254,7 @@
         <script src="script.js"></script>
 
         <footer>
-            <div class="footer-content">
+            <div class="footer-content" role="navigation" aria-label="Secondary">
                 <div class="footer-text">
                     <p>&copy; 2024 Fundamentals of Computer Vision. All rights
                         reserved.</p>
@@ -266,6 +266,7 @@
                 </div>
             </div>
         </footer>
+
 
     </body>
 </html>

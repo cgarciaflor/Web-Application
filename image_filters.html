@@ -21,7 +21,7 @@
     </head>
     <body>
         <nav>
-            <div class="container-nav">
+            <div class="container-nav" role="navigation" aria-label="Primary">
                 <h1 class="logo">FCV</h1>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
@@ -49,14 +49,14 @@
                     <li>Salt & Pepper</li>
                     <li>Gaussian</li>
                 </ul>
-                <div class="img-slides">
+                <div class="img-slides" role="img" aria-labelledby="noisy-imgs">
                     <div>
                         <a
                             href="images/SnP.png"
                             class="popup-image">
                             <img
                                 src="images/SnP.png"
-                                alt=" ">
+                                alt="Salt and Pepper Noise ">
                         </a>
                     </div>
                     <div>
@@ -64,7 +64,7 @@
                             class="popup-image">
                             <img
                                 src="images/guas.png"
-                                alt=" ">
+                                alt="Guassian Nosie">
                         </a>
                     </div>
                 </div>
@@ -110,13 +110,13 @@
                             edges and boundaries in images by detecting abrupt
                             changes in pixel intensity.</li>
                     </ul>
-                    <div class="img-slides">
+                    <div class="img-slides" role="img" aria-labelledby="linear-Filters-imgs">
                         <div>
                             <a href="images/smooth.png"
                                 class="popup-image">
                                 <img
                                     src="images/smooth.png"
-                                    alt=" ">
+                                    alt="smooth filtering">
                             </a>
                         </div>
                         <div>
@@ -124,14 +124,14 @@
                                 class="popup-image">
                                 <img
                                     src="images/sharp.png"
-                                    alt=" ">
+                                    alt="sharp filtering">
                             </a>
                         </div>
                         <div>
                             <a href="images/edge-detect.png"
                                 class="popup-image">
                                 <img src="images/edge-detect.png"
-                                    alt=" ">
+                                    alt="edge detecting">
                             </a>
                         </div>
                     </div>
@@ -164,13 +164,13 @@
                             strong
                             edges.</li>
                     </ul>
-                    <div class="img-slides">
+                    <div class="img-slides" role="img" aria-labelledby="Non-linear-Filters-imgs">
                         <div>
                             <a href="images/median.jpg"
                                 class="popup-image">
                                 <img
                                     src="images/median.jpg"
-                                    alt=" ">
+                                    alt="median filtering">
                             </a>
                         </div>
                         <div>
@@ -178,14 +178,14 @@
                                 class="popup-image">
                                 <img
                                     src="images/bilateral.png"
-                                    alt=" ">
+                                    alt="bilateral filtering">
                             </a>
                         </div>
                         <div>
                             <a href="images/Anisotropic.png"
                                 class="popup-image">
                                 <img src="images/Anisotropic.png"
-                                    alt=" ">
+                                    alt="Anisotropic filtering">
                             </a>
                         </div>
                     </div>
@@ -200,13 +200,13 @@
                     an average of all the values in its
                     neighborhood</p>
 
-                <div class="img-slides">
+                <div class="img-slides" role="img" aria-labelledby="box-filter-steps">
                     <div>
                         <a href="images/avg-step1.png"
                             class="popup-image">
                             <img
                                 src="images/avg-step1.png"
-                                alt=" ">
+                                alt="avg-step1 ">
                         </a>
                     </div>
                     <div>
@@ -214,21 +214,21 @@
                             class="popup-image">
                             <img
                                 src="images/avg-step2.png"
-                                alt=" ">
+                                alt=" avg-step2">
                         </a>
                     </div>
                     <div>
                         <a href="images/avg-step3.png"
                             class="popup-image">
                             <img src="images/avg-step3.png"
-                                alt=" ">
+                                alt=" avg-step3">
                         </a>
                     </div>
                     <div>
                         <a href="images/avg-step-final.png"
                             class="popup-image">
                             <img src="images/avg-step-final.png"
-                                alt=" ">
+                                alt="avg-step-final ">
                         </a>
                     </div>
                 </div>
@@ -236,8 +236,8 @@
                     kernel size as long as it follows the following:
                 </p>
                 <a href="images/box-filter.png"
-                    class="popup-image">
-                    <img src="images/box-filter.png">
+                    class="popup-image" role="img" aria-labelledby="box-filter">
+                    <img src="images/box-filter.png" alt="box-filter">
                 </a>
                 <p><strong>Boundary issues</strong></p>
                 <p>The filter window falls off the edge of the image</p>
@@ -289,10 +289,9 @@
         <script src="script.js"></script>
 
         <footer>
-            <div class="footer-content">
+            <div class="footer-content" role="navigation" aria-label="Secondary">
                 <div class="footer-text">
-                    <p>&copy; 2024 Fundamentals of Computer Vision. All
-                        rights
+                    <p>&copy; 2024 Fundamentals of Computer Vision. All rights
                         reserved.</p>
                     <p>Contact us: cgarciaf@uncc.edu</p>
                 </div>
@@ -302,5 +301,6 @@
                 </div>
             </div>
         </footer>
+
     </body>
 </html>
